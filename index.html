@@ -244,6 +244,25 @@
   .copyright{margin:22px 0 0;font-size:12.5px;color:rgba(255,255,255,0.4)}
 
   /* ---------- SCROLL REVEAL ---------- */
+  /* ── Reviews ── */
+  .hero-rating{display:inline-flex;align-items:center;gap:10px;margin-top:20px;font-size:13.5px;color:var(--white-65);text-decoration:none}
+  .hero-rating .stars{color:var(--orange);letter-spacing:2px;font-size:15px}
+  .hero-rating strong{color:#fff;font-weight:700}
+  .hero-rating:hover span:last-child{color:#fff}
+  .reviews{background:var(--ink);padding:92px 0 96px;border-top:1px solid var(--white-border)}
+  .reviews-head{max-width:640px;margin:0 0 40px}
+  .reviews-head h2{font-family:'Sora',sans-serif;font-weight:700;font-size:clamp(27px,3.6vw,36px);letter-spacing:-0.02em;margin:0 0 14px;color:#fff}
+  .reviews-sum{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:14.5px;color:var(--white-65)}
+  .reviews-sum .stars{color:var(--orange);letter-spacing:2px;font-size:17px}
+  .reviews-sum strong{color:#fff}
+  .reviews-sum a{color:var(--orange);text-decoration:none;border-bottom:1px solid rgba(254,138,0,0.4)}
+  .reviews-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .review{background:rgba(255,255,255,0.04);border:1px solid var(--white-border);border-radius:18px;padding:28px 28px 24px;display:flex;flex-direction:column;margin:0}
+  .review .stars{color:var(--orange);letter-spacing:3px;font-size:15px;margin-bottom:12px}
+  .review h3{font-family:'Sora',sans-serif;font-weight:700;font-size:18px;letter-spacing:-0.01em;color:#fff;margin:0 0 10px}
+  .review blockquote{margin:0;font-size:15.5px;line-height:1.65;color:var(--white-90);flex:1}
+  .review figcaption{margin-top:18px;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--white-65)}
+  @media (max-width:760px){.reviews{padding:72px 0 76px}.reviews-grid{grid-template-columns:1fr}.review{padding:24px 22px 20px}}
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.3,1), transform .7s cubic-bezier(.2,.7,.3,1)}
   .reveal.in{opacity:1;transform:translateY(0)}
 </style>
@@ -282,6 +301,7 @@
         </a>
       </div>
       <p class="cta-note">Free for 14 days, then <a href="#pricing">choose what you can afford</a>.</p>
+      <a class="hero-rating" href="#reviews" aria-label="Rated 5 out of 5 on the App Store. Read the reviews"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span><strong>5.0</strong> on the App Store &middot; read the reviews</span></a>
     </div>
     <div class="hero-visual">
       <div class="hero-photo-frame">
@@ -362,6 +382,42 @@
         <p class="showcase-sub">See your nutrition over time</p>
         <p>Progress over a week, not a guilt trip over one day.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="reviews-head reveal">
+      <span class="eyebrow">Early reviews</span>
+      <h2>What our first users are saying.</h2>
+      <div class="reviews-sum"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span><strong>5.0 out of 5</strong> from 5 ratings on the App Store</span><a href="https://apps.apple.com/gb/app/verafuel/id6810807694">See them on the App Store</a></div>
+    </div>
+    <div class="reviews-grid reveal">
+      <figure class="review">
+        <div class="stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <h3>Exactly what I was looking for!</h3>
+        <blockquote>&ldquo;Really intuitive app with precise macros and lifestyle tracking. Recommend to anyone looking to improve their health.&rdquo;</blockquote>
+        <figcaption>App Store review</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <h3>Excellent</h3>
+        <blockquote>&ldquo;Great app for tracking nutrition and training to achieve health goals (easy to adapt should you stray from the vegan path also).&rdquo;</blockquote>
+        <figcaption>App Store review</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <h3>Easy Set Up experience</h3>
+        <blockquote>&ldquo;Really easy to set up and get started. Clean design and intuitive layout means I could get started with no friction.&rdquo;</blockquote>
+        <figcaption>App Store review</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <h3>Simple and Convenient</h3>
+        <blockquote>&ldquo;Vera Fuel is a clean, user-friendly app with a straightforward interface. It's easy to navigate, the features are simple to understand, and the overall experience feels smooth and focused on performance.&rdquo;</blockquote>
+        <figcaption>App Store review</figcaption>
+      </figure>
     </div>
   </div>
 </section>
