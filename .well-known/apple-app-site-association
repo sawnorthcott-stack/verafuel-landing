@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["FVXNH6XN94.com.verafuel.app"],
+        "components": [
+          {
+            "/": "/fuel-check",
+            "comment": "Fuel Check, In-App Event deep link target"
+          },
+          {
+            "/": "/fuel-check/*",
+            "comment": "Fuel Check sub-routes"
+          }
+        ]
+      }
+    ]
+  }
+}
