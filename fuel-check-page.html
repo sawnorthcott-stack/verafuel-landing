@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 7-Day Fuel Check · VeraFuel</title>
+<meta name="description" content="Log seven days and get a plain-English read on iron, B12, omega-3, iodine and protein quality.">
+<meta name="theme-color" content="#0E261B">
+<link rel="canonical" href="https://verafuel.app/fuel-check">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="The 7-Day Fuel Check">
+<meta property="og:description" content="Seven days of logging, one honest read.">
+<meta property="og:url" content="https://verafuel.app/fuel-check">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#0A3D2C;
+    --ink-deep:#06241A;
+    --cream:#F2EFE6;
+    --orange:#FE8A00;
+    --rule:rgba(10,61,44,.16);
+    --muted:rgba(10,61,44,.70);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:Sora,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.55;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:0 16px}
+
+  /* Masthead */
+  header{padding:26px 0 0}
+  .mast{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .mast a{text-decoration:none;color:inherit}
+  .logo{width:112px;height:auto;display:block}
+  .lbl{
+    font-family:"Space Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);
+  }
+  .hair{height:1px;background:var(--rule);margin:22px 0 0}
+
+  /* Hero */
+  .hero{padding:40px 0 10px}
+  .eyebrow{
+    font-family:"Space Mono",ui-monospace,monospace;
+    font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--orange);margin-bottom:18px;
+  }
+  h1{
+    font-size:clamp(34px,8.2vw,52px);font-weight:800;letter-spacing:-.03em;
+    line-height:1.04;margin-bottom:20px;
+  }
+  .lede{font-size:clamp(17px,4.4vw,20px);color:var(--muted);max-width:30em}
+
+  /* Body */
+  main section{padding:30px 0}
+  main p{font-size:16.5px;margin-bottom:17px;max-width:34em}
+  main p:last-child{margin-bottom:0}
+  h2{
+    font-size:clamp(22px,5.4vw,27px);font-weight:600;letter-spacing:-.02em;
+    line-height:1.2;margin-bottom:16px;
+  }
+  em{font-style:italic}
+  strong{font-weight:600}
+
+  /* The five markers, as a data strip rather than a bullet list */
+  .markers{
+    display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 4px;
+  }
+  .marker{
+    font-family:"Space Mono",ui-monospace,monospace;
+    font-size:12.5px;letter-spacing:.02em;
+    border:1px solid var(--rule);border-radius:7px;
+    padding:7px 11px;color:var(--ink);background:rgba(255,255,255,.5);
+  }
+  .marker b{color:var(--orange);font-weight:700;margin-right:7px}
+
+  /* Honest-limits block, deliberately plain */
+  .notes{border-left:2px solid var(--orange);padding:2px 0 2px 18px;margin:4px 0 0}
+  .notes p{font-size:15.5px;color:var(--muted);margin-bottom:12px}
+  .notes p:last-child{margin-bottom:0}
+
+  /* CTA */
+  .cta{padding:34px 0 10px}
+  .btn{
+    display:inline-block;background:var(--ink);color:var(--cream);
+    text-decoration:none;font-weight:600;font-size:16.5px;
+    padding:15px 26px;border-radius:13px;letter-spacing:-.01em;
+  }
+  .btn:hover{background:var(--ink-deep)}
+  .cta .fine{
+    font-family:"Space Mono",ui-monospace,monospace;
+    font-size:11.5px;letter-spacing:.07em;color:var(--muted);margin-top:14px;
+  }
+
+  footer{padding:36px 0 46px;margin-top:26px;border-top:1px solid var(--rule)}
+  footer p{font-size:13px;color:var(--muted);margin-bottom:9px;max-width:none}
+  footer a{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#F2EFE6; --ink-deep:#000; --cream:#0A2A1F;
+      --rule:rgba(242,239,230,.18); --muted:rgba(242,239,230,.72);
+    }
+    :root:not([data-theme="light"]) .marker{background:rgba(242,239,230,.05)}
+    :root:not([data-theme="light"]) .btn{background:var(--orange);color:#06241A}
+    :root:not([data-theme="light"]) .btn:hover{background:#ff9d26}
+  }
+  :root[data-theme="dark"]{
+    --ink:#F2EFE6; --ink-deep:#000; --cream:#0A2A1F;
+    --rule:rgba(242,239,230,.18); --muted:rgba(242,239,230,.72);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <div class="mast">
+      <a href="/" aria-label="VeraFuel home">
+        <svg class="logo" viewBox="151 105 1012 429" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VeraFuel">
+          <path fill="currentColor" d="M 150.00 105.00 L 455.16 523.03 A 30.00 30.00 0 0 0 503.62 523.03 L 709.77 240.64 A 100.00 100.00 0 0 1 790.54 199.60 L 1040.59 199.60 A 80.00 80.00 0 0 0 1098.59 174.70 L 1164.80 105.00 L 745.01 105.00 A 105.00 105.00 0 0 0 660.20 148.09 L 482.62 391.35 A 4.00 4.00 0 0 1 476.16 391.35 L 288.10 133.73 A 70.00 70.00 0 0 0 231.56 105.00 Z"/>
+          <path fill="currentColor" d="M 1011.57 273.39 L 828.03 273.39 A 100.00 100.00 0 0 0 747.26 314.43 L 591.55 527.73 Q 586.24 535.00 595.24 535.00 L 694.37 535.00 Q 703.37 535.00 708.67 527.73 L 811.80 386.46 A 45.00 45.00 0 0 1 848.15 367.99 L 887.35 367.99 A 80.00 80.00 0 0 0 945.35 343.09 Z"/>
+          <circle cx="886.5" cy="488.4" r="46.6" fill="#FE8A00"/>
+        </svg>
+      </a>
+      <a href="/" class="lbl">verafuel.app</a>
+    </div>
+    <div class="hair"></div>
+  </header>
+
+  <div class="hero">
+    <div class="eyebrow">Seven days &nbsp;/&nbsp; five markers</div>
+    <h1>The 7-Day<br>Fuel Check</h1>
+    <p class="lede">Seven days of logging, one honest read.</p>
+  </div>
+
+  <main>
+
+    <section>
+      <p>Calories are the easy part. The things that quietly catch plant-based runners out are the ones you only find out about months later, in a blood test or in a race that falls apart at mile 18.</p>
+      <p>So I built a finite version of the question. Log seven days of normal eating, then get a plain-English read on the five that plant-based eating makes hardest.</p>
+
+      <div class="markers">
+        <span class="marker"><b>Fe</b>Iron</span>
+        <span class="marker"><b>B12</b>Vitamin B12</span>
+        <span class="marker"><b>ALA</b>Omega-3</span>
+        <span class="marker"><b>I</b>Iodine</span>
+        <span class="marker"><b>Leu</b>Protein quality</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>What you actually get</h2>
+      <p>For each of the five: your real average against your target, a verdict in ordinary words rather than a traffic light, and one specific food that closes the gap.</p>
+      <p>Protein quality is the one most people have never seen measured. It is not how much protein you ate, it is whether enough of it arrived in one sitting to be useful, which on a plant-based diet is a different question with a different answer.</p>
+    </section>
+
+    <section>
+      <h2>How it works, and what it refuses to do</h2>
+      <div class="notes">
+        <p><strong>Seven logged days, not seven calendar days.</strong> Miss a Tuesday and nothing breaks. A streak that punishes you for having a life is not a measurement, it is a guilt trip.</p>
+        <p><strong>No badge at the end.</strong> No confetti, no points, no shareable trophy. The reward is a report worth reading.</p>
+        <p><strong>Start whenever.</strong> There is no cohort and no start gun. Day one is whenever you log day one.</p>
+      </div>
+    </section>
+
+    <div class="cta">
+      <a class="btn" href="https://apps.apple.com/app/id6810807694">Get VeraFuel on the App Store</a>
+      <p class="fine">iPhone only. Once you are in, the Fuel Check lives under Insights &rsaquo; Nutrients.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>VeraFuel is built by Simon Northcott, a sports nutrition coach with an MSc in Food Science and a Level 4 Elite Sports Nutrition qualification. iPhone only for now.</p>
+    <p>This is nutrition guidance, not medical advice. If something is wrong, see your GP or a registered dietitian.</p>
+    <p>
+      <a href="mailto:simon@verafuel.app">simon@verafuel.app</a> &nbsp;·&nbsp;
+      <a href="https://www.instagram.com/verafuelperformance/">@verafuelperformance</a> &nbsp;·&nbsp;
+      <a href="/privacy.html">Privacy</a> &nbsp;·&nbsp;
+      <a href="/support.html">Support</a>
+    </p>
+  </footer>
+
+</div>
+
+</body>
+</html>
